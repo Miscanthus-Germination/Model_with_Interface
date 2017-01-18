@@ -1,0 +1,24 @@
+Variable name,Description,Value,Units,Min,Max,Default if Blank,SimPlE,Dependencies,Requirements
+x,Width of the hole plot,400,mm,1,100000,1000,,,
+y,Length of the sowing run,1100,mm,1,100000,1000,,,
+z,Depth of the hole plot (changing z will mean changing clod numbers),80,mm,1,1000,100,,> (SD),
+Seeds,Number of seeds to model,1, - ,1,100000,100,,,
+SD,Sowing Depth,40,mm,1,500,50,,,< (z)
+Tb.germ,Base temperature for germination of the seed,,°C ,0,40,0,,,
+Tb.elomg,Base temperature for elongation of the hupercotyl,,°C ,0,40,0,,,
+Yb.germ,Base Water potenchal for germination,,?,-0.99,0,-0.3,,,
+a,hypocotyl Weibull elongation function parameter a mm-1  (max length of seed),60,mm-1,5,1000,70,,,
+b,hypocotyl Weibull elongation function parameter b Cd-1,,Cd-1,0.0001,2,0.02,,,
+c,hypocotyl Weibull elongation function parameter c,,,0.01,50,2,,,
+Run,Number of days to run the model for,,,1,364,10,,,
+Startday,The day of the year to start on,200,,1,365,127,,,The environmental  data for all days
+yStyle,"If the row of seeds (y axis) should be randomly distributed (0 = random, 1= order, 10= random channel, 11= order channel, 20= 2 random channels, 21= 2 ordered channels)",21,,0,21,1,,,
+CRc,Total Accumulated rainfull needed to have a crust,,mm,1,200,12,,,
+DRc1,Todays rainfull needed to have a crust,,mm,1,50,5,,,
+DRc2,Todays rainfull needed to make the crust most and provide no resistence to the seed,,mm,1,30,3.5,,,
+DryProb,The probobilty a seed will get thrugh the dry crust,,%,0,1,0.9,,,
+Hit.Size,The minimam size needed to effect  the seed,,mm,0.1,100,5,,,
+Sowing.lineS,Sowing line start,140,mm,0,100000,0,,,yStyle 10 or 11x size
+Sowing.lineE,Sowing line End,160,mm,0,100000,5,,,"yStyle 10 or 11,  x size"
+Sowing.line2S,Sowing line start,240,mm,0,100000,0,,,yStyle 10 or 11x size
+Sowing.line2E,Sowing line End,260,mm,0,100000,5,,,"yStyle 10 or 11,  x size"
