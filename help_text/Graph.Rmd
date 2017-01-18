@@ -1,0 +1,36 @@
+## Help Text
+
+**General Infomation:** 
+This section displays a 3D representation of the model seed bed.  
+***
+
+### Re-Plot:
+This button re-plots the data<span style="color:red"> by default it will plot the last data generated with the model even if that was in a different session</span>. When this page is opened a cube is generated to test the JavaScript if you can see the 3D cube you will be able to seed the model visualisation **(So be patient and let JavaScript render it)**.      
+The Chart will tell you it's progress in the top right like the model did when running - however some extra time will be used by JavaScript.      
+
+#### Zip file:
+This allows a Zip file of a saved model to be loaded so you can re-visualize an old model without re-running it. Check the *use file* box to load the data and then *Re-Plot* this can be un-checked to go back to using the most recently generated data.    
+***
+
+### Data Visualisation:
+The chart will appear in the middle of the screen and can be zoomed and rotated using the mouse. This is a simplified visualisation of the last day of the model.    
+It shows the soil surface, clods seed and vertical lines upwards of seed germinating.     
+
+
+#### Key:
+**Clods** are the clods {if using experimental ellipses the seedlings may go through the clods on occasion}.  
+**Seeds** the position of each seed in the soil.  
+**Soil surface** A plane representing the depth of soil.    
+       
+**Seedlings that have failed to Emerge** due to lack of thermal time to reach the surface or if that are just touching the surface it is due to soil crusting.        
+**Is Stuck under a Clod** a seedling that hit a clod and didn't try to circumvent it.    
+**Tried to go around a Clod and Failed** a seedling that tried to circumvent a clod but failed.    
+**Tried to go around a Clod and Emerged** a seedling that successfully went round a clod.    
+**Emerged Without Incident** Seedlings that emerged successfully in the allotted thermal time and whithot hitting clods.    
+      
+The colours in the key can be changed by going to the next tab **Customise seedbed colours** and changing the colours in the drop down menus.    
+To apply these colours to the visualisation you will need to *Re-Plot*.      
+
+
+***          
+

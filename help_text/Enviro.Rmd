@@ -1,0 +1,41 @@
+## Help Text
+
+**General Infomation:**
+This section is for climate data that the seeds will be germinating during.  Like all the sections real data can be imported or a range of sample data can be used or generated. 
+***
+
+### Generate hypothetical Data:
+The data is generated in each section using the Max, Min and mode of the sliders this is used to generate a *random* or *normal* distribution depending on the option buttons.    
+
+#### Defaults:
+The defaults allow the choice of a training data set.    
+
+#### Advanced:
+This is a set of example data for the environmental variables.  
+The file has 4 columns: *Day*, *AvTemp*, *AvWat* and *Rainfall*. 
+For the later three columns there is a Advanced control option with a corresponding tick box to overwrite the example data for that column.
+***
+
+### Import:
+Importing custom data of the format outlined below will NOT overwrite sections ticked in **Advanced**.  
+* The file imported must be in .csv format.  
+* It must have the same headers as the example stock file.  
+* The file must also be at least 10 and no more than 365 records long.
+    + No calculations of germination and emergence will be done outside of the environmental values.  
+* The units used in the data in the file must be the same as the stock file (this is outlined below).     
+**You must tick the use data box to use the data (this allows it to be unticked and the imported file not used)**        
+
+***
+
+### Data Chart:
+There is a chart at the bottom that represents the data currently intended for the model.  This chart updates as it is iterated so new data imported or generated should display here.    
+
+#### Data Explanation:
+**Day** is the day of the year.  
+**AvTemp** is the mean daily temperature in degrees C.  
+**AvWat** is the soil moisture W/V as a fraction.  
+**Rainfall** is the daily rainfall in mm?  
+
+          
+***             
+

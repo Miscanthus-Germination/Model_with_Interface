@@ -1,0 +1,59 @@
+## Help Text
+
+**General Infomation:** 
+This page is the general specifications for running the model (these settings will have a large effect on the model's run time).  The specifications are separated into *Seed specifications* and *Sowing specifications*.  Under each set of inputs is a summary of the current settings and at the bottom of the page is the **Run Model** button. {this is the only Model input section that dusen't have a file input ATM}
+***
+
+### Seed Specifications:
+The Base temperatures for the seed type, the seeds resistance to obstacles, and parameters of the seeds growth.    
+
+#### Defults:
+ATM Only one default if Available.    
+
+#### Advansed:
+There is a check box at the top to let the model read the advanced settings.     
+Under **Growing** is: The base temperature for germination <span style="color:red">(*Warning*:  This must be the same as the base temperature for germination used in the Seed Inputs page)</span>. The the base temperature for elongation. Lastly the base water potential required (this doesn't do much ATM, the original model didn't use it).   
+Under **Emergence** is: The probability the seed can break though a dry crust (it will try again every day[for 6 days ATM], and if the crust becomes moist in this time it will go through unimpeded).  The maximum size of clod needed for the seed to have a chance of being obstructed (below this size the clod will be ignored by the seedling).   
+Under **Extra Advanced** is: The Weibull Elongation Functions, the first of which denotes the maximum length a seedling will achieve during hypocotal elongation
+***
+
+### Sowing Specifications:
+This gives the plot size, the day to start on and some soil conditions.    
+
+#### Defults:
+ATM Only one default if Available.     
+
+#### Advanced:
+There is a check box at the top to let the modal read the advanced settings.     
+First you must select the number of seeds the model will simulate (more seeds will be slower but more accurate)
+Under **Plot Dimensions** is the width, length and Depth of the plot in mm as well as the sowing depth <span style="color:red">(*Warning*:  This must be less then the plot depth)</span>.   
+Under **Sowing Style** is the system of rows/distribution of seed used the seed can be distributed evenly along the plot (this may well not work for moderate to well clodded pots) or randomly and it can be placed in up to two rows (if using rows the spacings of the rows in the plot will appear on sliders below[the row spacings can overlap]).   
+Under **Day Info** is the Number of days the model is to be run for (too long may lead to unrealistic results), and the start date <span style="color:red">if this is eariler than the climate data can provide the the modal will be run from the closest Julian day with climate data.</span>    
+Under **Crusting** is the cumulative rainfall required to make the soil crust, the rainfall required in a single day to get the soil to crust, and the rainfall necessary to make the crust moist for a day.
+***
+
+### Import:
+Importing custom data of the format outlined below will only overwrite sections ticked in **Main**.  
+* The file imported must be in .csv format.  
+* It Must have the same headers as the example stock file.  
+* The file must also be at least 10 and no more than 365 records long.
+    + No calculations of germination and emergence will be done outside of the environmental values.  
+* The units used in the data in the file must be the same as the stock file (this is outlined below).     
+     
+***
+
+### Summaries:
+There are text summary of the data that is currently set to check before running the model.
+***
+
+#### Ready?:
+*Use Experimental elipses* This will include the experimental ellipses (will not work).  
+**Run** *This will run the model!*.   
+***
+
+#### Done?:
+*After the model is run this will display a summary of the infomation from the model*
+    
+        
+***        
+

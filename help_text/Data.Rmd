@@ -1,0 +1,39 @@
+## Save Data:
+**General Infomation:**
+This section outputs data for the whole model and for specific sections. 
+***
+
+#### Save Zip:
+This saves a Zip file of all the data in the model (This Zip can be used to redo the visualisation or redo this section).    
+
+#### Load Zip:
+Import a Zip file here [of the model] and tick the *use data* box to save CSVs from that data or re graph it.   
+     
+#### Save CSV:     
+These are a set of CSV files that conform to the graphs on the next tab (these can be saved from the last model run or from an imported zip file).       
+     
+***
+***   
+
+## Graph Data:
+**General Infomation:**
+This section shows simple graphs of the model results. 
+***
+
+### Make all plots:
+This generates the plots from the last run model or a Zip file specified in the previous tab.      
+
+#### Germination with Time:
+Depending on whether the tick box at the bottom is selected the graph depicts Days or Thermal Time along the bottom and the fraction of seed germinated on the y axis.     Emergence is also shown in blue.
+
+#### No plot yet:
+To be done...           
+
+#### A Tree Graph:
+Depending on whether the tick box at the bottom is selected this is either a clikable or a flat tree graph that show the fate of proportions of modelled seed.      
+If flattened all the main seed outcomes are depickted.     
+If not flattened Germinated and not germinated are clickable to show the reasons why (right click to go back up the tree).     
+      
+     
+***     
+
